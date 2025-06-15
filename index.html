@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Account Details</title>
+    <link rel="stylesheet" href="accstyle.css" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  </head>
+
+  <body>
+    <h1 class="h1" style="text-align: center">ACCOUNT DETAILS</h1>
+    <div class="container">
+      <form action="#">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Full Name</span>
+            <input type="text" placeholder="Enter your full name." required />
+          </div>
+          <div class="input-box">
+            <span class="details">Reg no.</span>
+            <input type="text" placeholder="Enter your Reg no." required />
+          </div>
+          <div class="input-box">
+            <span class="details">Semester</span>
+            <select name="semester" required>
+              <option value="" disabled selected>Select an option</option>
+              <option value="1">S1</option>
+              <option value="2">S2</option>
+              <option value="3">S3</option>
+              <option value="4">S4</option>
+              <option value="5">S5</option>
+              <option value="6">S6</option>
+              <option value="7">S7</option>
+              <option value="8">S8</option>
+            </select>
+          </div>
+          <div class="input-box">
+            <span class="details">Department</span>
+            <select name="department" required>
+              <option value="" disabled selected>Select Option</option>
+              <option value="1">Computer Science</option>
+              <option value="2">Electrical & Electronics</option>
+              <option value="3">Electronics & Communication</option>
+              <option value="4">Civil Engineering</option>
+              <option value="5">Mechanical Engineering</option>
+              <option value="6">Information Technology</option>
+            </select>
+          </div>
+          <div class="input-box">
+            <span class="details">Date of Birth</span>
+            <input type="date" required />
+          </div>
+
+          <div class="input-box">
+            <span class="details">Mobile/phone</span>
+            <input type="text" placeholder="Don't have a phone?" required />
+          </div>
+          <div class="input-box">
+            <span class="details">Address</span>
+            <textarea
+              placeholder="Enter Your Address"
+              required
+              rows="4"
+              cols="45"
+            ></textarea>
+          </div>
+
+          <div class="input-box">
+            <span class="details">E-mail</span>
+            <input type="text" placeholder="Enter your E-mail" required />
+          </div>
+          <div class="input-box">
+            <span class="details">Total credits</span>
+            <input type="text" placeholder="Credits" required />
+          </div>
+          <div class="input-box">
+            <span class="details">CGPA</span>
+            <input type="text" placeholder="0.0" required />
+          </div>
+          <div class="gender-details">
+            <input type="radio" name="gender" id="dot-1" />
+            <input type="radio" name="gender" id="dot-2" />
+            <input type="radio" name="gender" id="dot-3" />
+            <span class="gender-title">Gender</span>
+            <div class="category">
+              <label for="dot-1" class="hover-glow">
+                <span class="dot one"></span>
+                <span class="gender">Male</span>
+              </label>
+              <label for="dot-2" class="hover-glow">
+                <span class="dot two"></span>
+                <span class="gender">Female</span>
+              </label>
+              <label for="dot-3" class="hover-glow">
+                <span class="dot three"></span>
+                <span class="gender">Prefer not to say</span>
+              </label>
+            </div>
+          </div>
+          <div class="button">
+            <span> <input type="submit" value="Save" /></span>
+            <span> <input type="reset" value="Reset" /></span>
+          </div>
+          <div class="back">
+            <input type="button" value="Back" onclick="goHome()" />
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
